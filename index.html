@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+Click Count Animation
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .square {
+        width: 80vw;
+        height: 80vh;
+        background: aqua;
+        border: 1px solid blue;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .tick {
+        position: absolute;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        background: red;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        pointer-events: none;
+    }
+</style>
+<script src="./index.js"></script>
+</body>
+</html>
